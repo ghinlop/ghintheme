@@ -1,0 +1,52 @@
+<%- include('./layout/header') %>
+    <%- include('./comp/nav') %>
+        <main>
+            <%- include('./comp/sologun') %>
+                <section class="nav-body">
+                    <div class="container py-4">
+                        <ul class="nolist d-flex w-100">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-briefcase fa-2x d-block"></i>
+                                    <span>business</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-shopping-cart fa-2x d-block"></i>
+                                    <span>Ecommerce</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-shopping-bag fa-2x d-block"></i>
+                                    <span>fashion</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-pencil fa-2x d-block"></i>
+                                    <span>blogging</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-camera fa-2x d-block"></i>
+                                    <span>photography</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="container product-show py-3">
+                    <div class="row">
+                        <% for(let i = 1; i < 5; i++) { %>
+                            <%- include('./comp/product.ejs') %>
+                                <% } %>
+                    </div>
+                    <div class="text-center">
+                        <a href="#" class="uk-button uk-button-default">View More</a>
+                    </div>
+                </section>
+        </main>
+        <%- include('./layout/footer') %>

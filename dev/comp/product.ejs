@@ -1,0 +1,23 @@
+<% for(let i = 1; i < 4; i++) { %>
+    <div class="col-md-4 col-sm-6 mb-3">
+        <div class="uk-box-shadow-hover-large border border-light">
+            <a href="#" class="uk-card uk-card-default">
+                <div class="uk-card-media-top">
+                    <img src="/dist/images/themes/<%= i %>.png" alt="">
+                </div>
+                <div class="uk-card-body bg-light p-3">
+                    <div class="row align-items-center text-center">
+                        <h3 class="col-md-7 text-md-left uk-card-title">
+                            Fagri
+                            <%= i %>
+                        </h3>
+                        <span class="col-md-5 uk-text-italic text-dark text-uppercase text-dark text-md-right">
+                            blogging
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <% } %>

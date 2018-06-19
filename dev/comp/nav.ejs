@@ -1,0 +1,61 @@
+<header uk-sticky="
+sel-target: header; 
+cls-active: uk-navbar-sticky; 
+animation: uk-animation-slide-top; 
+top: 500">
+    <div class="bg-dark">
+        <nav class="container">
+            <div class="row align-items-center">
+                <a href="#" class="col-md-3 col-8 logo d-block py-2">
+                    <img src="" alt="" data-src="/dist/images/logo.png" uk-img>
+                </a>
+                <aside class="col-md-7 text-md-right pr-md-0 order-md-2 order-3">
+                    <div id="aside" uk-offcanvas="mode: reveal; overlay: true">
+                        <div class="uk-offcanvas-bar bg-dark">
+                            <button class="uk-offcanvas-close d-md-none" type="button" uk-close></button>
+                            <ul id="menu-header" class="d-md-inline-flex text-uppercase nolist menutop uk-iconnav">
+                                <li>
+                                    <a href="">About Us</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="" uk-icon="icon: triangle-down">Themes Resource</a>
+                                    <ul class="text-uppercase nolist" uk-drop>
+                                        <li>
+                                            <a href="#">Business</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ecommerce</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Fashsion</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Blogging</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Photography</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">Request Design</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+                <ul class="nolist d-inline-flex col-md-2 col-4 menu-bar text-md-right order-md-3 order-2">
+                    <li class="flex-1">
+                        <a href="#" uk-icon="icon: search; ratio: 1.5"></a>
+                    </li>
+                    <li class="flex-1 d-md-none">
+                        <a href="#aside" uk-icon="icon: grid; ratio: 1.5" uk-toggle></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>

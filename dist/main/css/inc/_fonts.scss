@@ -1,0 +1,34 @@
+@import '_montserrat-fonts';
+
+@include fonts('UTMLinotypeZapfinoKT', '../fonts/UTM-LinotypeZapfino-KT.ttf');
+@include fonts('VutaFont', '../fonts/VutaFont.ttf');
+@include fonts('UTMNeo', '../fonts/UTM-Neo-Sans-Intel.ttf');
+@include fonts('UTMNeobold', '../fonts/UTM-Neo-Sans-IntelBold.ttf');
+@include fonts('VutaFont', '../fonts/VutaFonts.ttf');
+
+$montserrat: 'Montserrat', sans-serif;
+$utmlion: 'UTMLinotypeZapfinoKT';
+$utmneobold: 'UTMNeobold';
+$utmneo: 'UTMNeo';
+$tahoma: 'Tahoma';
+$vutaFont: 'VutaFont';
+$fa: 'Fontawesome';
+
+.montserrat{
+    font-family: $montserrat;
+}
+.utmlion{
+    font-family: $utmlion;
+}
+.utmneobold{
+    font-family: $utmneobold;
+}
+.utmneo{
+    font-family: $utmneo;
+}
+.tahoma{
+    font-family: $tahoma;
+}
+.vutafont{
+    font-family: $vutaFont;
+}
